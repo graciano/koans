@@ -10,7 +10,7 @@ class DiceSet
   end
 
   def roll(size)
-    @values = size.times.collect { (rand * 5).to_i }
+    @values = size.times.collect { 1 + (rand * 5).to_i }
   end
 end
 
